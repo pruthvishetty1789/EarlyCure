@@ -1,0 +1,45 @@
+.services-container {
+  text-align: center;
+  padding: 40px;
+  background-image: linear-gradient(
+    -45deg,
+    #a4cced 0%,
+    #a4cced 25%,
+    #a4cced 51%,
+    #a8f3a7 90%
+  );
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.service-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  /* Make all boxes equal */
+  min-height: 200px; /* You can adjust */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  background-color: #7fd5fa;
+}
+
+h2 {
+  color: #007bff;
+}
